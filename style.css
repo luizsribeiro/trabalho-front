@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Poppins;
+  src: url(font/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*#region Header */
+
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 5px 15px -10px #111;
+}
+
+.logo {
+  width: 4.6vw;
+  margin: 7px 0;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.item {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #585858;
+  text-decoration: none;
+  padding: 0 24px;
+}
+
+/*#endregion Header*/
