@@ -44,20 +44,17 @@
 }
 
 .section-1 {
+  max-width: 57.7vw;
   display: flex;
   padding: 3.5vw 0;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  margin: 0 auto;
 }
 
 .lado-direito {
   padding-right: 29px;
-  margin-left: 20.5vw;
-}
-
-.lado-esquerdo {
-  margin-right: 15%;
 }
 
 .lado-esquerdo img {
@@ -138,4 +135,12 @@
 
 .flex-1 {
   flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
 }
