@@ -1,7 +1,4 @@
-@font-face {
-  font-family: Poppins;
-  src: url(font/Poppins-Medium.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
   margin: 0;
@@ -21,7 +18,7 @@
 }
 
 .logo {
-  width: 4.6vw;
+  width: 3vw;
   margin: 7px 0;
 }
 
@@ -30,7 +27,7 @@
 }
 
 .item {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -41,3 +38,104 @@
 }
 
 /*#endregion Header*/
+
+.container {
+  padding-top: 3.9vw;
+}
+
+.section-1 {
+  display: flex;
+  padding: 3.5vw 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.lado-direito {
+  padding-right: 29px;
+  margin-left: 20.5vw;
+}
+
+.lado-esquerdo {
+  margin-right: 15%;
+}
+
+.lado-esquerdo img {
+  max-width: 471px;
+  width: 100%;
+}
+
+.lado-direito h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 47px;
+  color: #383838;
+  margin-bottom: 8px;
+  letter-spacing: 2.1px;
+}
+
+.lado-direito h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #585858;
+  letter-spacing: 1.5px;
+  padding-bottom: 17px;
+}
+
+.lado-direito p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #383838;
+  letter-spacing: 0.35px;
+}
+
+.lado-direito button {
+  background-color: #fff;
+  border: 1px solid #9b6b43;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 212px;
+  height: 47px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #9b6b43;
+  margin-bottom: 16px;
+}
+
+.section-2 {
+  background-color: #fbcfad;
+  padding: 10.4vw 0;
+  text-align: center;
+}
+
+.section-2 h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 47px;
+  color: #383838;
+  letter-spacing: 2.1px;
+}
+
+/* GLOBAL */
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
