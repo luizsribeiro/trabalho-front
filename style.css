@@ -43,12 +43,12 @@
   padding-top: 3.9vw;
 }
 
-/* SECTION 1 */
+/*#region SECTION 1 */
 
 .section-1 {
   max-width: 57.7vw;
   display: flex;
-  padding: 3.5vw 0;
+  padding: 6.2vw 0;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
@@ -113,7 +113,9 @@
   margin-bottom: 16px;
 }
 
-/* SECTION 2 */
+/*#endregion SECTION 1 */
+
+/*#region SECTION 2 */
 
 .section-2 {
   background-color: #fbcfad;
@@ -131,7 +133,9 @@
   letter-spacing: 2.1px;
 }
 
-/* SECTION 3 */
+/*#endregion SECTION 2 */
+
+/*#region SECTION 3 */
 
 .section-3 {
   padding: 4vw 0;
@@ -224,13 +228,96 @@
   color: #fff;
 }
 
-/* SECTION 4 */
+/*#endregion SECTION 3 */
+
+/*#region SECTION 4 */
 
 .section-4 {
   background-color: #fbcfad;
-  padding: 10.4vw 0;
+  padding: 4vw 0;
   text-align: center;
 }
+
+.section-4 h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #383838;
+  letter-spacing: 0.95px;
+
+  margin-bottom: 58px;
+}
+
+.section-4 .section-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 57.7vw;
+}
+
+.section-4 .card-equipe {
+  display: flex;
+  flex-direction: column;
+
+  padding: 18px 32px;
+
+  background: #ffffff;
+  border: 1px solid #ecedef;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  margin: 0 40px;
+}
+
+.section-4 .card-title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #383838;
+  margin: 12px 0;
+}
+
+.section-4 .card-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #383838;
+  letter-spacing: 0.95px;
+  margin-bottom: 20px;
+}
+
+.section-4 .section-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 57.7vw;
+}
+
+.section-4 .card-social {
+  display: flex;
+}
+
+.section-4 .card-social img {
+  max-width: 35px;
+}
+
+.section-4 .card-equipe img {
+  width: 100%;
+}
+
+/*#endregion SECTION 4 */
+
+/* SECTION 5 */
 
 .section-5 {
   padding: 10.4vw 0;
