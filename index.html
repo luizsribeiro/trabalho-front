@@ -40,7 +40,30 @@
       </div>
 
       <div class="section-3">
-        <h1>EM BREVE</h1>
+        <h1>Conheça nossos produtos</h1>
+        <div class="section-row">
+          <div class="flex-3 lado-direito">
+            <ul onclick="changeImage(event, event.target.id)">
+              <li id="1" class="active">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+              </li>
+              <li id="2">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+              <li id="3">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+              <li id="4">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+              <li id="5">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+            </ul>
+          </div>
+          <div class="flex-2 lado-esquerdo">
+            <div class="imageBox col-5">
+              <img id="servicesCarousel" src="img/img-subistitute.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="buttonRegion">
+          <a href="#createAccount" class="freeTest">
+            <button type="button">Assinar</button>
+          </a>
+        </div>
       </div>
 
       <div class="section-4">
@@ -58,5 +81,6 @@
     <div class="footer">
       <h1>FOOTER</h1>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
