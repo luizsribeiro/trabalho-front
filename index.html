@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="font/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <title>Mariana's Café</title>
   </head>
   <body>
     <div class="header">
-      <a href="" class="item">Opção menu</a>
+      <a href="" class="item">Clube da Mari</a>
       <a href="" class="item">Opção menu</a>
       <div class="logo">
         <img src="img/logo_2.png" alt="" />
@@ -19,24 +24,136 @@
     <div class="container">
       <div class="section-1">
         <div class="flex-3 lado-direito">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+          <h1>Clube da Mari</h1>
           <h2>
-            Praesent viverra odio eget dolor dictum luctus. Mauris non euismod
-            elit. Class aptent taciti sociosqu ad litora torquent per conubia
-            nostra, per inceptos
+            Faça sua assinatura e receba café de qualidade na porta da sua casa
+            todo mês!
+          </h2>
+          <h2>
+            Escolha o tipo dos grãos e o tamanho do pacote, em seguida nós
+            selecionamos os melhores grãos dos produtores locais para sua mesa.
           </h2>
           <button>Assinar</button>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          </p>
+          <p>Planos mensais, semestrais e anuais.</p>
+          <h3>
+            * Na primeira assinatura, você recebe de brinde uma caneca para
+            tornar sua experiência ainda mais completa.
+          </h3>
         </div>
         <div class="flex-2 lado-esquerdo">
-          <img src="img/img-subistitute.png" alt="Imagem a substituir" />
+          <div id="icon-container"></div>
         </div>
       </div>
 
       <div class="section-2">
-        <h1>EM BREVE</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                  <p>
+                    Praesent viverra odio eget dolor dictum luctus. Mauris non
+                    euismod elit. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/img-subistitute-produto.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 1.500,00</p>
+                  <p class="preco-novo">R$ 1.000,00</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                  <p>
+                    Praesent viverra odio eget dolor dictum luctus. Mauris non
+                    euismod elit. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/img-subistitute-produto.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 1.200,00</p>
+                  <p class="preco-novo">R$ 900,00</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                  <p>
+                    Praesent viverra odio eget dolor dictum luctus. Mauris non
+                    euismod elit. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/img-subistitute-produto.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 100,00</p>
+                  <p class="preco-novo">R$ 50,00</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+                  <p>
+                    Praesent viverra odio eget dolor dictum luctus. Mauris non
+                    euismod elit. Class aptent taciti sociosqu ad litora
+                    torquent per conubia nostra, per inceptos
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/img-subistitute-produto.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 200,00</p>
+                  <p class="preco-novo">R$ 100,00</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">
+            <i class="fas fa-angle-left"></i>
+          </a>
+          <a class="next" onclick="plusSlides(1)">
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </div>
       </div>
 
       <div class="section-3">
@@ -123,5 +240,17 @@
       <h1>FOOTER</h1>
     </div>
     <script src="main.js"></script>
+
+    <script>
+      var animation = bodymovin.loadAnimation({
+        // animationData: { /* ... */ },
+        container: document.getElementById("icon-container"), // required
+        path: "img/coffee.json", // required
+        renderer: "svg", // required
+        loop: true, // optional
+        autoplay: true, // optional
+        name: "Demo Animation", // optional
+      });
+    </script>
   </body>
 </html>
