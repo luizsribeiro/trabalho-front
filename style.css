@@ -472,20 +472,69 @@ html::-webkit-scrollbar {
 /* SECTION 5 */
 
 .section-5 {
-  padding: 10.4vw 0;
+  padding: 4vw 0;
   text-align: center;
 }
 
+.section-5 h1{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #383838;
+  letter-spacing: 0.95px;
+  margin-bottom: 58px;
+}
+
+
+
+.section-5 .about-us{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 57.7vw;
+}
+
+.section-5 .about-us img{
+  padding: 3%;
+  border-color: black;
+  border-width: 20px;
+}
+
+.section-5 .about-us h3{
+  font-family: "Poppins", sans-serif;
+  align-content: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #383838;
+  margin: 0 auto;
+  text-align: left;
+  padding: 3%;
+}
+
+/*#endregion SECTION 5 */
+
+/* SECTION 6 */
+
 .section-6 {
   background-color: #fbcfad;
-  padding: 10.4vw 0;
+  padding: 4vw 0;
   text-align: center;
 }
+
+/*#endregion SECTION 6 */
+
+/* SECTION FOOTER */
 
 .footer {
   padding: 20px 0 50px 0;
   text-align: center;
 }
+
+/*#endregion FOOTER */
 
 /* GLOBAL */
 
