@@ -8,19 +8,19 @@ function changeImage(e, numImg) {
   var servicesCarousel = document.getElementById("servicesCarousel");
   switch (numImg) {
     case "1":
-      servicesCarousel.src = "img/img-subistitute.png";
+      servicesCarousel.src = "img/nossos-produtos/1.png";
       break;
     case "2":
-      servicesCarousel.src = "img/img-subistitute.png";
+      servicesCarousel.src = "img/nossos-produtos/2.png";
       break;
     case "3":
-      servicesCarousel.src = "img/img-subistitute.png";
+      servicesCarousel.src = "img/nossos-produtos/3.png";
       break;
     case "4":
-      servicesCarousel.src = "img/img-subistitute.png";
+      servicesCarousel.src = "img/nossos-produtos/4.png";
       break;
     case "5":
-      servicesCarousel.src = "img/img-subistitute.png";
+      servicesCarousel.src = "img/nossos-produtos/5.png";
       break;
     default:
       break;

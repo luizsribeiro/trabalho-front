@@ -1,271 +1,441 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="font/fontawesome-free-5.15.4-web/css/all.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="font/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-  <title>Mariana's Café</title>
-</head>
+    <!-- Smooth Scroll -->
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
 
-<body>
-  <div class="header">
-    <a href="" class="item">Clube da Mari</a>
-    <a href="" class="item">Opção menu</a>
-    <div class="logo">
-      <img src="img/logo_2.png" alt="" />
-    </div>
-    <a href="" class="item">Opção menu</a>
-    <a href="" class="item">Opção menu</a>
-  </div>
-  <div class="container">
-    <div class="section-1">
-      <div class="flex-3 lado-direito">
-        <h1>Clube da Mari</h1>
-        <h2>
-          Faça sua assinatura e receba café de qualidade na porta da sua casa
-          todo mês!
-        </h2>
-        <h2>
-          Escolha o tipo dos grãos e o tamanho do pacote, em seguida nós
-          selecionamos os melhores grãos dos produtores locais para sua mesa.
-        </h2>
-        <button>Assinar</button>
-        <p>Planos mensais, semestrais e anuais.</p>
-        <h3>
-          * Na primeira assinatura, você recebe de brinde uma caneca para
-          tornar sua experiência ainda mais completa.
-        </h3>
+            var hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+    <!-- End Smooth Scroll -->
+    <title>Mariana's Café</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <a href="#section1" class="item">Clube da Mari</a>
+      <a href="#section2" class="item">Promoções</a>
+      <a href="#section3" class="item">Nossos Produtos</a>
+      <div class="logo">
+        <img src="img/logo_2.png" alt="" />
       </div>
-      <div class="flex-2 lado-esquerdo">
-        <div id="icon-container"></div>
-      </div>
+      <a href="#section4" class="item">Equipe</a>
+      <a href="#section5" class="item">Sobre Nós</a>
+      <a href="#section6" class="item">Contato</a>
     </div>
-
-    <div class="section-2">
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="slide-content">
-            <div class="flex-1">
-              <div class="lado-direito">
-                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                <p>
-                  Praesent viverra odio eget dolor dictum luctus. Mauris non
-                  euismod elit. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra, per inceptos
-                </p>
-              </div>
-            </div>
-            <div class="flex-1">
-              <img src="img/img-subistitute-produto.png" alt="" />
-            </div>
-            <div class="flex-1">
-              <div class="lado-esquerdo">
-                <p class="preco-anterior">R$ 1.500,00</p>
-                <p class="preco-novo">R$ 1.000,00</p>
-                <button>ver mais</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="slide-content">
-            <div class="flex-1">
-              <div class="lado-direito">
-                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                <p>
-                  Praesent viverra odio eget dolor dictum luctus. Mauris non
-                  euismod elit. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra, per inceptos
-                </p>
-              </div>
-            </div>
-            <div class="flex-1">
-              <img src="img/img-subistitute-produto.png" alt="" />
-            </div>
-            <div class="flex-1">
-              <div class="lado-esquerdo">
-                <p class="preco-anterior">R$ 1.200,00</p>
-                <p class="preco-novo">R$ 900,00</p>
-                <button>ver mais</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="slide-content">
-            <div class="flex-1">
-              <div class="lado-direito">
-                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                <p>
-                  Praesent viverra odio eget dolor dictum luctus. Mauris non
-                  euismod elit. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra, per inceptos
-                </p>
-              </div>
-            </div>
-            <div class="flex-1">
-              <img src="img/img-subistitute-produto.png" alt="" />
-            </div>
-            <div class="flex-1">
-              <div class="lado-esquerdo">
-                <p class="preco-anterior">R$ 100,00</p>
-                <p class="preco-novo">R$ 50,00</p>
-                <button>ver mais</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="slide-content">
-            <div class="flex-1">
-              <div class="lado-direito">
-                <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-                <p>
-                  Praesent viverra odio eget dolor dictum luctus. Mauris non
-                  euismod elit. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra, per inceptos
-                </p>
-              </div>
-            </div>
-            <div class="flex-1">
-              <img src="img/img-subistitute-produto.png" alt="" />
-            </div>
-            <div class="flex-1">
-              <div class="lado-esquerdo">
-                <p class="preco-anterior">R$ 200,00</p>
-                <p class="preco-novo">R$ 100,00</p>
-                <button>ver mais</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">
-          <i class="fas fa-angle-left"></i>
-        </a>
-        <a class="next" onclick="plusSlides(1)">
-          <i class="fas fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="section-3">
-      <h1>Conheça nossos produtos</h1>
-      <div class="section-row">
+    <div class="container">
+      <div id="section1" class="section-1">
         <div class="flex-3 lado-direito">
-          <ul onclick="changeImage(event, event.target.id)">
-            <li id="1" class="active">
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-            </li>
-            <li id="2">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-            <li id="3">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-            <li id="4">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-            <li id="5">Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-          </ul>
+          <h1>Clube da Mari</h1>
+          <h2>
+            Faça sua assinatura e receba café de qualidade na porta da sua casa
+            todo mês!
+          </h2>
+          <h2>
+            Escolha o tipo dos grãos e o tamanho do pacote, em seguida nós
+            selecionamos os melhores grãos dos produtores locais para sua mesa.
+          </h2>
+          <button>Assinar</button>
+          <p>Planos mensais, semestrais e anuais.</p>
+          <h3>
+            * Na primeira assinatura, você recebe de brinde uma caneca para
+            tornar sua experiência ainda mais completa.
+          </h3>
         </div>
         <div class="flex-2 lado-esquerdo">
-          <div class="imageBox col-5">
-            <img id="servicesCarousel" src="img/img-subistitute.png" alt="" />
+          <div id="icon-container"></div>
+        </div>
+      </div>
+
+      <div id="section2" class="section-2">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>Café Black Tucano Premium Blend em grãos 250 g</h2>
+                  <p>
+                    Um blend para clientes especiais apreciadores de uma
+                    deliciosa combinação de cafés de diferentes origens.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/produtos/cafe-black-tucano-premium.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 45,90</p>
+                  <p class="preco-novo">R$ 27,90</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>Café Black Tucano Single Origin em grãos 250 g</h2>
+                  <p>
+                    O carro chefe da Black Tucano! Contempla os cafés de origem
+                    única, ou seja cultivados por uma única fazenda ou produtor.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img
+                  src="img/produtos/cafe-black-tucano-single-origin.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 42,90</p>
+                  <p class="preco-novo">R$ 26,90</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>
+                    Reserva Villa Café Santa Origem (Intenso) 100% Arábica 250g
+                  </h2>
+                  <p>
+                    Primeiro café da edição Reserva, nossa família de microlotes
+                    exóticos e raros! Produzido na fazenda do Villa Café, em
+                    Carmo da Cachoeira (Sul de Minas).
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/produtos/cafe-reserva-mg.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <p class="preco-anterior">R$ 35,90</p>
+                  <p class="preco-novo">R$ 24,90</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>
+                    Reserva Villa Café - O Melhor Café de Minas Gerais - Micro
+                    Lote 250g
+                  </h2>
+                  <p>
+                    Um dos nossos maiores orgulhos é o Melhor de Minas, o café
+                    da Fazenda Forquilha do Rio em Espera Feliz, de grãos
+                    colhidos manualmente, selecionados de forma artesanal e, por
+                    isso, vencedor do concurso do melhor café de Minas Gerais.
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/produtos/cafe-reserva-mg2.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <!-- <p class="preco-anterior">R$ 200,00</p> -->
+                  <p class="preco-novo">R$ 38,90</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="slide-content">
+              <div class="flex-1">
+                <div class="lado-direito">
+                  <h2>
+                    Reserva Villa Café: O Melhor Café de São Paulo e 3° Melhor
+                    Café do Brasil 250g
+                  </h2>
+                  <p>
+                    Que honra poder torrar e comercializar o melhor café
+                    produzido em todo o Estado de São Paulo na safra 2019/2020!
+                    Este microlote ficou em 3º lugar no Concurso Nacional de
+                    Qualidade de Cafés do Brasil - ABIC (Associação Brasileira
+                    da Indústria do Café).
+                  </p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <img src="img/produtos/cafe-reserva-sp.png" alt="" />
+              </div>
+              <div class="flex-1">
+                <div class="lado-esquerdo">
+                  <!-- <p class="preco-anterior">R$ 200,00</p> -->
+                  <p class="preco-novo">R$ 49,90</p>
+                  <button>ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">
+            <i class="fas fa-angle-left"></i>
+          </a>
+          <a class="next" onclick="plusSlides(1)">
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="section3" class="section-3">
+        <h1>Conheça nossos produtos</h1>
+        <div class="section-row">
+          <div class="flex-3 lado-direito">
+            <ul onclick="changeImage(event, event.target.id)">
+              <li id="1" class="active">Assinatura Café Black Tucano - 250g</li>
+              <li id="2">Assinatura Reserva Villa Café - 250g</li>
+              <li id="3">Assinatura Café Baronesa Gran Reserva - 250g</li>
+              <li id="4">Assinatura Café Orfeu Clássico - 1kg</li>
+              <li id="5">Assinatura Café La Finca Gourmet - 250g</li>
+            </ul>
+          </div>
+          <div class="flex-2 lado-esquerdo">
+            <div class="imageBox col-5">
+              <img
+                id="servicesCarousel"
+                src="img/nossos-produtos/1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="buttonRegion">
+          <a href="#createAccount" class="freeTest">
+            <button type="button">Assinar</button>
+          </a>
+        </div>
+      </div>
+
+      <div id="section4" class="section-4">
+        <h1>Conheça nossa equipe</h1>
+        <div class="section-row">
+          <div class="flex-1 card-equipe">
+            <img src="img/luiz.jpg" alt="" />
+            <h2 class="card-title">Luiz Gustavo</h2>
+            <p class="card-text">
+              Pode se encontrar a felicidade mesmo nas horas mais sombrias, se a
+              pessoa se lembrar de acender a luz.
+            </p>
+            <div class="card-social">
+              <div class="flex-1"><img src="img/linked.png" alt="" /></div>
+              <div class="flex-1"><img src="img/wpp.png" alt="" /></div>
+              <div class="flex-1"><img src="img/twitter.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="flex-1 card-equipe">
+            <img src="img/mariana.jpg" alt="" />
+            <h2 class="card-title">Mariana</h2>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              viverra odio eget dolor dictum luctus.
+            </p>
+            <div class="card-social">
+              <div class="flex-1"><img src="img/linked.png" alt="" /></div>
+              <div class="flex-1"><img src="img/wpp.png" alt="" /></div>
+              <div class="flex-1"><img src="img/twitter.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="flex-1 card-equipe">
+            <img src="img/joao.jpg" alt="" />
+            <h2 class="card-title">João Carlos</h2>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+              viverra odio eget dolor dictum luctus.
+            </p>
+            <div class="card-social">
+              <div class="flex-1"><img src="img/linked.png" alt="" /></div>
+              <div class="flex-1"><img src="img/wpp.png" alt="" /></div>
+              <div class="flex-1"><img src="img/twitter.png" alt="" /></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="buttonRegion">
-        <a href="#createAccount" class="freeTest">
-          <button type="button">Assinar</button>
-        </a>
-      </div>
-    </div>
 
-    <div class="section-4">
-      <h1>Conheça nossa equipe</h1>
-      <div class="section-row">
-        <div class="flex-1 card-equipe">
-          <img src="img/profile-picture.png" alt="" />
-          <h2 class="card-title">NOME</h2>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            viverra odio eget dolor dictum luctus.
-          </p>
-          <div class="card-social">
-            <div class="flex-1"><img src="img/linked.png" alt="" /></div>
-            <div class="flex-1"><img src="img/wpp.png" alt="" /></div>
-            <div class="flex-1"><img src="img/twitter.png" alt="" /></div>
+      <div id="section5" class="section-5">
+        <h1>
+          Sobre Nós
+          <br />
+          <svg
+            width="207"
+            height="10"
+            viewBox="0 0 207 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 0H207V10H0V0Z" fill="#A67851" />
+          </svg>
+        </h1>
+
+        <div class="about-us">
+          <div class="flex-2">
+            <div class="img-wrapper">
+              <img src="img/logo_1.png" alt="" />
+            </div>
+          </div>
+          <div class="flex-3">
+            <h3 class="about-us-text">
+              <p>
+                Somos uma empresa focada em proporcionar a melhor experiência em
+                cafés pra você direto em casa, afinal nosso combustível diário é
+                o café. Acreditamos em todo o potencial dos produtos brasileiros
+                e entendemos que merecemos o melhor!
+              </p>
+
+              <p>
+                Todos os meses selecionamos os melhores grãos de nossos
+                produtores e acompanhamos todo o processo, da colheita à torra,
+                para garantir qualidade e excelência para nossos clientes.
+              </p>
+
+              <p>
+                Nascemos de uma necessidade, nesse cotidiano tão corrido, de ter
+                o seu café sempre à mão em qualquer momento, seja para dar uma
+                energia a mais para o seu trabalho ou até mesmo para aquele
+                momento em família ao redor da mesa. Nos comprometemos em
+                entregar sabores especiais aos nossos clientes, atendendo seu
+                consumo mensal e facilitando seu dia a dia.
+              </p>
+
+              <p>
+                Aqui, na Mariana's Café, queremos que a sua experiência de
+                comprar cafés seja ainda mais inesquecível, porque é feita para
+                a sua família com jeitinho, capricho e amor.
+              </p>
+            </h3>
           </div>
         </div>
-        <div class="flex-1 card-equipe">
-          <img src="img/profile-picture.png" alt="" />
-          <h2 class="card-title">NOME</h2>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            viverra odio eget dolor dictum luctus.
-          </p>
-          <div class="card-social">
-            <div class="flex-1"><img src="img/linked.png" alt="" /></div>
-            <div class="flex-1"><img src="img/wpp.png" alt="" /></div>
-            <div class="flex-1"><img src="img/twitter.png" alt="" /></div>
+      </div>
+
+      <div id="section6" class="section-6">
+        <div class="section-row">
+          <div class="flex-1 lado-esquerdo">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+            <h2>
+              Praesent viverra odio eget dolor dictum luctus. Mauris non euismod
+              elit. Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos
+            </h2>
           </div>
-        </div>
-        <div class="flex-1 card-equipe">
-          <img src="img/profile-picture.png" alt="" />
-          <h2 class="card-title">NOME</h2>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            viverra odio eget dolor dictum luctus.
-          </p>
-          <div class="card-social">
-            <div class="flex-1"><img src="img/linked.png" alt="" /></div>
-            <div class="flex-1"><img src="img/wpp.png" alt="" /></div>
-            <div class="flex-1"><img src="img/twitter.png" alt="" /></div>
+          <div class="flex-1 lado-direito">
+            <form>
+              <div class="flex-row">
+                <div class="flex-1 title-form">
+                  <h1>Entre em contato</h1>
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div class="flex-1">
+                  <label for="nome">Nome completo</label><br />
+                  <input name="nome" type="text" />
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div class="flex-1">
+                  <label for="cpf">CPF/CNPJ</label><br />
+                  <input name="cpf" id="cpfMask" type="text" />
+                </div>
+                <div class="flex-1" style="margin-left: 30px">
+                  <label for="telefone">Telefone</label><br />
+                  <input name="telefone" id="telefoneMask" type="text" />
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div class="flex-1">
+                  <label for="email">E-mail</label><br />
+                  <input name="email" type="text" />
+                  <span id="mensagem-erro"></span>
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div class="flex-1">
+                  <label for="mensagem">Mensagem</label><br />
+                  <textarea name="mensagem"></textarea>
+                </div>
+              </div>
+
+              <button>Enviar</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="section-5">
-      <h1>Sobre Nós</h1>
-      <div class="about-us">
-        <img src="img/profile-picture.png" alt="">
-        <h3 class="about-us-text">Somos uma empresa focada em proporcionar a melhor experiência em cafés pra você direto
-          em casa, afinal nosso combustível diário é o café. Acreditamos em todo o potencial dos produtos brasileiros e
-          entendemos que merecemos o melhor!
-          Todos os meses selecionamos os melhores grãos de nossos produtores e acompanhamos todo o processo, da colheita
-          à torra, para garantir qualidade e excelência para nossos clientes.
-          Nascemos de uma necessidade, nesse cotidiano tão corrido, de ter o seu café sempre à mão em qualquer momento,
-          seja para dar uma energia a mais para o seu trabalho ou até mesmo para aquele momento em família ao redor da
-          mesa. Nos comprometemos em entregar sabores especiais aos nossos clientes, atendendo seu consumo mensal e
-          facilitando seu dia a dia.
-          Aqui, na Mariana's Café, queremos que a sua experiência de comprar cafés seja ainda mais inesquecível, porque
-          é feita para a sua família com jeitinho, capricho e amor.
-        </h3>
-      </div>
+    <div class="footer">
+      <h1>FOOTER</h1>
     </div>
+    <script src="main.js"></script>
 
-    <div class="section-6">
-      <h1>EM BREVE</h1>
-    </div>
-  </div>
-  <div class="footer">
-    <h1>FOOTER</h1>
-  </div>
-  <script src="main.js"></script>
+    <script>
+      $("input[id*='cpfMask']").inputmask({
+        mask: ["999.999.999-99", "99.999.999/9999-99"],
+        keepStatic: true,
+      });
 
-  <script>
-    var animation = bodymovin.loadAnimation({
-      // animationData: { /* ... */ },
-      container: document.getElementById("icon-container"), // required
-      path: "img/coffee.json", // required
-      renderer: "svg", // required
-      loop: true, // optional
-      autoplay: true, // optional
-      name: "Demo Animation", // optional
-    });
-  </script>
-</body>
+      $("input[id*='telefoneMask']").inputmask({
+        mask: ["(99) 99999-9999"],
+        keepStatic: true,
+      });
+    </script>
 
+    <script>
+      var animation = bodymovin.loadAnimation({
+        // animationData: { /* ... */ },
+        container: document.getElementById("icon-container"), // required
+        path: "img/coffee.json", // required
+        renderer: "svg", // required
+        loop: true, // optional
+        autoplay: true, // optional
+        name: "Demo Animation", // optional
+      });
+    </script>
+  </body>
 </html>

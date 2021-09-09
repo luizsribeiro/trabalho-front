@@ -9,6 +9,10 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 /*#region Header */
 
 .header {
@@ -162,7 +166,7 @@ html::-webkit-scrollbar {
 }
 
 .slide-content img {
-  width: 60%;
+  width: 75%;
 }
 
 .slide-content .lado-direito {
@@ -354,7 +358,7 @@ html::-webkit-scrollbar {
 }
 
 .section-3 .imageBox img {
-  width: 95%;
+  width: 75%;
   max-height: 13.8vw;
 }
 
@@ -476,43 +480,51 @@ html::-webkit-scrollbar {
   text-align: center;
 }
 
-.section-5 h1{
+.section-5 h1 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 31px;
+  line-height: 37px;
   color: #383838;
   letter-spacing: 0.95px;
   margin-bottom: 58px;
 }
 
+.section-5 h1 svg {
+  margin-left: 9%;
+}
 
-
-.section-5 .about-us{
+.section-5 .about-us {
   display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
   margin: 0 auto;
   max-width: 57.7vw;
 }
 
-.section-5 .about-us img{
-  padding: 3%;
-  border-color: black;
-  border-width: 20px;
+.section-5 .about-us .img-wrapper {
+  background: #f7f9fc 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 16px;
+  opacity: 1;
+  padding: 15px 39px;
+  text-align: center;
 }
 
-.section-5 .about-us h3{
+.section-5 .about-us .img-wrapper img {
+  width: 90%;
+}
+
+.section-5 .about-us h3 {
   font-family: "Poppins", sans-serif;
   align-content: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 24px;
   color: #383838;
   margin: 0 auto;
   text-align: left;
-  padding: 3%;
+  padding: 0 3vw;
 }
 
 /*#endregion SECTION 5 */
@@ -523,6 +535,117 @@ html::-webkit-scrollbar {
   background-color: #fbcfad;
   padding: 4vw 0;
   text-align: center;
+}
+
+.section-6 .section-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 57.7vw;
+}
+
+.section-6 .lado-esquerdo {
+  margin-top: 5%;
+}
+
+.section-6 .lado-esquerdo h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 39px;
+  line-height: 47px;
+  color: #383838;
+
+  margin-bottom: 8px;
+}
+
+.section-6 .lado-esquerdo h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  color: #585858;
+}
+
+.section-6 .lado-direito form {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 64px;
+  margin-left: 30px;
+}
+
+.section-6 .lado-direito form .title-form h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #383838;
+  margin-bottom: 25px;
+}
+
+.section-6 .lado-direito .flex-row {
+  margin-bottom: 8px;
+}
+
+.section-6 .lado-direito form label {
+  width: 100%;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.38px;
+  color: #383838;
+  margin-bottom: 9px;
+}
+
+.section-6 .lado-direito form input {
+  width: 100%;
+  padding: 0 15px;
+  font-size: 15px;
+  min-height: 47px;
+  background: #ffffff;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.section-6 .lado-direito form textarea {
+  width: 100%;
+  resize: none;
+  padding: 15px;
+  min-height: 200px;
+  background: #ffffff;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.section-6 .lado-direito form button {
+  background-color: #fbcfad;
+  border: 1px solid #a67851;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 13px;
+  width: 250px;
+  height: 52px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #383838;
 }
 
 /*#endregion SECTION 6 */
@@ -537,6 +660,14 @@ html::-webkit-scrollbar {
 /*#endregion FOOTER */
 
 /* GLOBAL */
+
+.flex-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
 
 .flex {
   display: flex;
